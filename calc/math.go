@@ -1,12 +1,6 @@
 package calc
 
 // returns sum of two integers
-func Add(i int, j int) int {
-	return i + j
-}
-
-/*
-// returns sum of two integers
 func Add(numbers ...int) int {
 	sum := 0
 
@@ -17,4 +11,3 @@ func Add(numbers ...int) int {
 	return sum
 }
 
-*/
