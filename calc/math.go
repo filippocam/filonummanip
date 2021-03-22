@@ -1,6 +1,10 @@
+// my test package
 package calc
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 // returns sum of two integers
 func Add(numbers ...int) (error, int) {
@@ -13,5 +17,10 @@ func Add(numbers ...int) (error, int) {
 		sum = sum + num
 	}
 
-	return nil,sum
+	return nil, sum
+}
+
+// returns sum of two integers
+func echo(testo string) {
+	fmt.Println("--->", testo)
 }
