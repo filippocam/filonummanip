@@ -20,7 +20,7 @@ func Add(numbers ...int) (error, int) {
 	return nil, sum
 }
 
-// returns sum of two integers
-func echo(testo string) {
+// returns input string
+func Echo(testo string) {
 	fmt.Println("--->", testo)
 }
