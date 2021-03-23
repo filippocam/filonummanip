@@ -1,4 +1,4 @@
-package main
+package config
 
 import (
 	"fmt"
@@ -48,6 +48,8 @@ func LoadConfig(path string) (config Config, err error) {
 	viper.AddConfigPath(path)
 	viper.SetConfigName("app")
 	viper.SetConfigType("env")
+	viper.AddConfigPath(".")
+	viper.AddConfigPath("./config/") // config file path
 
 	viper.AutomaticEnv()
 
